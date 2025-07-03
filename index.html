@@ -2,51 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>lupar - Own your shadow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lupar - Own Your Shadow!</title>
   <style>
-    /* Full-page gradient background */
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom right, #6a11cb, #2575fc);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-
     body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle, #0f1c3f 0%, #00081c 100%);
       display: flex;
       justify-content: center;
       align-items: center;
     }
-
-    /* Desktop size — 3× smaller */
-    .logo {
-      width: 200px; /* adjust if your original logo was different */
+    img {
+      max-width: 30%;
       height: auto;
-      display: block;
-    }
-
-    /* Mobile Portrait */
-    @media (max-width: 767px) and (orientation: portrait) {
-      .logo {
-        width: 75vw;
-        max-width: none;
-      }
-    }
-
-    /* Mobile Landscape */
-    @media (max-width: 767px) and (orientation: landscape) {
-      .logo {
-        width: 50vw;
-        max-width: none;
-      }
     }
   </style>
 </head>
 <body>
-  <img src="lupar.png" alt="lupar Logo" class="logo" />
+  <img src="lupar.png" alt="Lupar Logo" />
 </body>
 </html>
