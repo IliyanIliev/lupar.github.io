@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>lupar - Own your shadow</title>
   <style>
-    /* Full-screen gradient background */
+    /* Full-page gradient background */
     html, body {
       height: 100%;
       margin: 0;
@@ -22,9 +22,9 @@
       align-items: center;
     }
 
-    /* Logo styling */
+    /* Desktop size — 3× smaller */
     .logo {
-      width: 200px; /* adjust to 1/3 of your original desktop size */
+      width: 200px; /* adjust if your original logo was different */
       height: auto;
       display: block;
     }
@@ -33,6 +33,7 @@
     @media (max-width: 767px) and (orientation: portrait) {
       .logo {
         width: 75vw;
+        max-width: none;
       }
     }
 
@@ -40,11 +41,12 @@
     @media (max-width: 767px) and (orientation: landscape) {
       .logo {
         width: 50vw;
+        max-width: none;
       }
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="lupar Logo" class="logo" />
+  <img src="lupar.png" alt="lupar Logo" class="logo" />
 </body>
 </html>
