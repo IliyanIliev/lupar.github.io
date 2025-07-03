@@ -5,18 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
   <title>Lupar - Own Your Shadow!</title>
   <style>
-    body {
+    html, body {
       margin: 0;
-      height: 100vh;
+      padding: 0;
+      height: 100%;
       background: radial-gradient(circle, #0f1c3f 0%, #00081c 100%);
+    }
+    body {
+      height: 100dvh;
+      height: 100vh; /* fallback */
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
       box-sizing: border-box;
+      padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
     }
     img {
-      width: 250px;
+      max-width: 25%;
       height: auto;
       display: block;
     }
